@@ -348,7 +348,7 @@ public class LesenActivity extends Activity implements View.OnClickListener {
             case DIALOG_WRITE_ERROR:
                 // A dialog that we show when the write operation fails:
                 return new AlertDialog.Builder(this)
-                        .setTitle("Write    failed")
+                        .setTitle("Write failed 1")
                         .setMessage("")
                         .setIcon(android.R.drawable.ic_dialog_alert)
                         .setCancelable(true)

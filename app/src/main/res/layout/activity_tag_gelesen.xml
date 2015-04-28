@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_floating_material_dark"
+    android:paddingLeft="@dimen/abc_button_padding_horizontal_material"
+    android:id="@+id/RelativeLayout"
+    android:isScrollContainer="true"
+    android:paddingRight="@dimen/abc_button_padding_horizontal_material">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/scrollView" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/gleistein_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tag gelesen"
+                    android:id="@+id/textView2"
+                    android:layout_below="@+id/imageView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="@dimen/abc_text_size_headline_material"
+                    android:textColor="@android:color/holo_green_light"
+                    android:paddingTop="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UID:"
+                    android:id="@+id/textView3"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignLeft="@+id/textViewUID"
+                    android:layout_alignStart="@+id/textViewUID"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewUID"
+                    android:layout_below="@+id/textView2"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_alignStart="@+id/textView2"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:textSize="@dimen/abc_text_size_body_1_material" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daten:"
+                    android:id="@+id/textView4"
+                    android:layout_below="@+id/textViewUID"
+                    android:layout_alignLeft="@+id/textViewDaten"
+                    android:layout_alignStart="@+id/textViewDaten"
+                    android:textColor="@color/abc_primary_text_material_dark"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:layout_marginTop="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textViewDaten"
+                    android:layout_below="@+id/textViewUID"
+                    android:layout_alignLeft="@+id/textViewUID"
+                    android:layout_alignStart="@+id/textViewUID"
+                    android:textColor="@color/bright_foreground_material_dark"
+                    android:textSize="@dimen/abc_text_size_body_1_material"
+                    android:password="false" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Daten aus DB lesen"
+                    android:id="@+id/buttonDatenLesen"
+                    android:paddingLeft="@dimen/abc_button_padding_horizontal_material"
+                    android:paddingTop="@dimen/abc_button_padding_horizontal_material"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:paddingRight="@dimen/abc_button_padding_horizontal_material"
+                    android:layout_above="@+id/buttonDatenSchreiben"
+                    android:layout_alignLeft="@+id/scrollView"
+                    android:layout_alignStart="@+id/scrollView"
+                    android:layout_alignRight="@+id/scrollView"
+                    android:layout_alignEnd="@+id/scrollView"
+                    android:layout_marginTop="20dp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Daten in DB schreiben"
+                    android:id="@+id/buttonDatenSchreiben"
+                    android:paddingLeft="@dimen/abc_button_padding_horizontal_material"
+                    android:paddingTop="@dimen/abc_button_padding_horizontal_material"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:paddingRight="@dimen/abc_button_padding_horizontal_material"
+                    android:layout_above="@+id/buttonZurueck"
+                    android:layout_alignLeft="@+id/scrollView"
+                    android:layout_alignStart="@+id/scrollView"
+                    android:layout_alignRight="@+id/scrollView"
+                    android:layout_alignEnd="@+id/scrollView" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonZurueck"
+                    android:paddingLeft="@dimen/abc_button_padding_horizontal_material"
+                    android:paddingTop="@dimen/abc_button_padding_horizontal_material"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:paddingRight="@dimen/abc_button_padding_horizontal_material"
+                    android:text="Zurück"
+                    android:singleLine="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/scrollView"
+                    android:layout_alignEnd="@+id/scrollView" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>
